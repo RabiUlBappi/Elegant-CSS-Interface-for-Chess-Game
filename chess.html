@@ -1,0 +1,168 @@
+<!--Doctype html-->
+<html>
+	<head>
+		<meta charset=utf-8>
+		<title>Chess</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="jquery-2.1.3.js"></script>
+		<script src="chess.js"></script>
+	</head>
+	<body>
+		<div class="eaten" id="eatenw">
+			<table>
+				<tr>
+					<td id="ew1"><button></button></td>
+					<td id="ew2"><button></button></td>
+				</tr>
+				<tr>
+					<td id="ew3"><button></button></td>
+					<td id="ew4"><button></button></td>
+				</tr>
+				<tr>
+					<td id="ew5"><button></button></td>
+					<td id="ew6"><button></button></td>
+				</tr>
+				<tr>
+					<td id="ew7"><button></button></td>
+					<td id="ew8"><button></button></td>
+				</tr>
+				<tr>
+					<td id="ew9"><button></button></td>
+					<td id="ew10"><button></button></td>
+				</tr>
+				<tr>
+					<td id="ew11"><button></button></td>
+					<td id="ew12"><button></button></td>
+				</tr>
+				<tr>
+					<td id="ew13"><button></button></td>
+					<td id="ew14"><button></button></td>
+				</tr>
+				<tr>
+					<td id="ew15"><button></button></td>
+					<td id="ew16"><button></button></td>
+				</tr>
+			</table>
+		</div>
+		<div id="board">
+			<h1 id="h1">Basic Chess</h1>
+			<table>
+				<tr>
+					<td><button id="a1"><img class="bR" src="img/bR.png"></button></td>
+					<td><button id="a2"><img class="bN" src="img/bN.png"></button></td>
+					<td><button id="a3"><img class="bB" src="img/bB.png"></button></td>
+					<td><button id="a4"><img class="bK" src="img/bK.png"></button></td>
+					<td><button id="a5"><img class="bQ" src="img/bQ.png"></button></td>
+					<td><button id="a6"><img class="bB" src="img/bB.png"></button></td>
+					<td><button id="a7"><img class="bN" src="img/bN.png"></button></td>
+					<td><button id="a8"><img class="bR" src="img/bR.png"></button></td>
+				</tr>
+				<tr>
+					<td><button id="b1"><img class="bP" src="img/bP.png"></button></td>
+					<td><button id="b2"><img class="bP" src="img/bP.png"></button></td>
+					<td><button id="b3"><img class="bP" src="img/bP.png"></button></td>
+					<td><button id="b4"><img class="bP" src="img/bP.png"></button></td>
+					<td><button id="b5"><img class="bP" src="img/bP.png"></button></td>
+					<td><button id="b6"><img class="bP" src="img/bP.png"></button></td>
+					<td><button id="b7"><img class="bP" src="img/bP.png"></button></td>
+					<td><button id="b8"><img class="bP" src="img/bP.png"></button></td>
+				</tr>
+				<tr>
+					<td><button id="c1"><img src="">cgf</button></td>
+					<td><button id="c2"><img src=""></button></td>
+					<td><button id="c3"><img src=""></button></td>
+					<td><button id="c4"><img src=""></button></td>
+					<td><button id="c5"><img src=""></button></td>
+					<td><button id="c6"><img src=""></button></td>
+					<td><button id="c7"><img src=""></button></td>
+					<td><button id="c8"><img src=""></button></td>
+				</tr>
+				<tr>
+					<td><button id="d1"><img src=""></button></td>
+					<td><button id="d2"><img src=""></button></td>
+					<td><button id="d3"><img src=""></button></td>
+					<td><button id="d4"><img src=""></button></td>
+					<td><button id="d5"><img src=""></button></td>
+					<td><button id="d6"><img src=""></button></td>
+					<td><button id="d7"><img src=""></button></td>
+					<td><button id="d8"><img src=""></button></td>
+				</tr>
+				<tr>
+					<td><button id="e1"><img src=""></button></td>
+					<td><button id="e2"><img src=""></button></td>
+					<td><button id="e3"><img src=""></button></td>
+					<td><button id="e4"><img src=""></button></td>
+					<td><button id="e5"><img src=""></button></td>
+					<td><button id="e6"><img src=""></button></td>
+					<td><button id="e7"><img src=""></button></td>
+					<td><button id="e8"><img src=""></button></td>
+				</tr>
+				<tr>
+					<td><button id="f1"><img src=""></button></td>
+					<td><button id="f2"><img src=""></button></td>
+					<td><button id="f3"><img src=""></button></td>
+					<td><button id="f4"><img src=""></button></td>
+					<td><button id="f5"><img src=""></button></td>
+					<td><button id="f6"><img src=""></button></td>
+					<td><button id="f7"><img src=""></button></td>
+					<td><button id="f8"><img src=""></button></td>
+				</tr>
+				<tr>
+					<td><button id="g1"><img class="wP" src="img/wP.png"></button></td>
+					<td><button id="g2"><img class="wP" src="img/wP.png"></button></td>
+					<td><button id="g3"><img class="wP" src="img/wP.png"></button></td>
+					<td><button id="g4"><img class="wP" src="img/wP.png"></button></td>
+					<td><button id="g5"><img class="wP" src="img/wP.png"></button></td>
+					<td><button id="g6"><img class="wP" src="img/wP.png"></button></td>
+					<td><button id="g7"><img class="wP" src="img/wP.png"></button></td>
+					<td><button id="g8"><img class="wP" src="img/wP.png"></button></td>
+				<tr>
+					<td><button id="h1"><img class="wR" src="img/wR.png"></button></td>
+					<td><button id="h2"><img class="wN" src="img/wN.png"></button></td>
+					<td><button id="h3"><img class="wB" src="img/wB.png"></button></td>
+					<td><button id="h4"><img class="wQ" src="img/wQ.png"></button></td>
+					<td><button id="h5"><img class="wK" src="img/wK.png"></button></td>
+					<td><button id="h6"><img class="wB" src="img/wB.png"></button></td>
+					<td><button id="h7"><img class="wN" src="img/wN.png"></button></td>
+					<td><button id="h8"><img class="wR" src="img/wR.png"></button></td>
+				</tr>
+			</table>
+		</div>
+		<div class="eaten" id="eatenb">
+			<table>
+				<tr>
+					<td id="eb1"><button></button></td>
+					<td id="eb2"><button></button></td>
+				</tr>
+				<tr>
+					<td id="eb3"><button></button></td>
+					<td id="eb4"><button></button></td>
+				</tr>
+				<tr>
+					<td id="eb5"><button></button></td>
+					<td id="eb6"><button></button></td>
+				</tr>
+				<tr>
+					<td id="eb7"><button></button></td>
+					<td id="eb8"><button></button></td>
+				</tr>
+				<tr>
+					<td id="eb9"><button></button></td>
+					<td id="eb10"><button></button></td>
+				</tr>
+				<tr>
+					<td id="eb11"><button></button></td>
+					<td id="eb12"><button></button></td>
+				</tr>
+				<tr>
+					<td id="eb13"><button></button></td>
+					<td id="eb14"><button></button></td>
+				</tr>
+				<tr>
+					<td id="eb15"><button></button></td>
+					<td id="eb16"><button></button></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
